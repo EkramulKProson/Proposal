@@ -1,0 +1,65 @@
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            background-color: aqua;
+        }
+
+        h1 {
+            font-size: 5vw; 
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        
+        .buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        button {
+            padding: 10px 20px; 
+            font-size: 3vw;     
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #yesBtn {
+            background-color: green;
+            color: white;
+        }
+
+        #noBtn {
+            background-color: red;
+            color: white;
+            position: relative;
+        }
+
+        #message {
+            margin-top: 20px;
+            font-size: 4vw; 
+            color: blue;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 7vw; 
+            }
+
+            button {
+                font-size: 5vw; 
+                padding: 8px 15px;
+            }
+
+            #message {
+                font-size: 6vw;
+            }
+        }
+

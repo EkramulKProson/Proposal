@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do You Love Me?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>DO YOU LOVE ME??</h1>
+
+    <div class="buttons">
+        <button id="yesBtn">YES</button>
+        <button id="noBtn">NO</button>
+    </div>
+
+    <div id="message"></div>
+
+    <script>
+        document.getElementById('yesBtn').addEventListener('click', function() {
+            document.getElementById('message').innerText = 'SAY -> I LOVE YOU <- TO ME';
+        });
+
+        const noBtn = document.getElementById('noBtn');
+        noBtn.addEventListener('mouseover', function() {
+            const x = Math.floor(Math.random() * window.innerWidth - noBtn.offsetWidth);
+            const y = Math.floor(Math.random() * window.innerHeight - noBtn.offsetHeight);
+            noBtn.style.position = 'absolute'; 
+            noBtn.style.left = `${x < 0 ? 0 : x}px`;
+            noBtn.style.top = `${y < 0 ? 0 : y}px`;
+        });
+    </script>
+
+</body>
+</html>
